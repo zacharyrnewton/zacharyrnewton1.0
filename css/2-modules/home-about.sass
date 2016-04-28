@@ -1,0 +1,53 @@
+section.about
+  background: white
+
+
+  h5
+    margin: auto
+    margin-top: 1.5em
+    width: 6em
+    color: black
+    text-align: center
+    //box-shadow: 0px 0px 0px 2px black
+
+
+  p
+    text-indent: 1em
+    padding: 10px
+    color: $light-blue
+    //box-shadow: 0px 0px 0px 5px pink
+
+  .col-1.about-me-text
+    max-width: 320px
+    margin: 0
+
+  .avatar
+    transition: all 0.3s ease-in-out
+    margin-top: 50px
+    border-radius: 200px
+    width: 200px
+    height: auto
+    padding-top: 200px
+    filter: grayscale(10%)
+    background:
+      image: url(../assets/img/avatar.jpg)
+      size: cover
+      position: -55px 0px
+      repeat: no-repeat
+
+
+
+
+
+
+
+  @media (max-width: 640px)
+    .avatar
+      margin: auto
+
+    .col-1.about-me-text
+      max-width: 100%
+      margin: 0 10px
+
+
+  @media (max-width: 775px)

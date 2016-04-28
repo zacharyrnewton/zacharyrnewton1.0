@@ -1,0 +1,153 @@
+.home-sections section.web-design
+  padding: 50px 0 0 0
+section.web-design
+  position: relative
+  z-index: 1
+  .web-design-body
+    position: relative
+    z-index: 1
+    overflow: hidden
+    padding: 3em 0 3em 0
+    text-align: center
+    margin: auto
+    margin-top: 20px
+    margin-bottom: -34px
+    background:
+      image: url(../assets/img/wdb.jpg)
+      repeat: no-repeat
+      size: cover
+      position: center top
+  .web-design-body:after
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: rgba(50,90,230,0.6)
+      image: $overlay
+      repeat: repeat
+    z-index: -1
+    opacity: 0.3
+
+
+
+  h3
+    text-align: center
+    background: rgba(255,255,255,0.5)
+    width: 6em
+    margin-left: auto
+    margin-right: auto
+  p.no-indent
+    text-indent: 0
+
+  p
+    color: $light-blue
+    text-indent: 1em
+    padding: 10px
+    background: rgba(255,255,255,0.4)
+
+
+  .web-build-container
+    display: flex
+    justify-content: center
+    a.web-build
+      transition: all 0.3s ease-in-out
+      display: flex
+      justify-content: center
+      margin: 2px
+      float: left
+      width: 306px
+      height: 170px
+      opacity: 0
+      transform: translateX(20px)
+      border-radius: 10px
+      @media (max-width: 640px)
+        float: none
+        width: 85%
+        margin: auto
+        margin-top: 4px
+
+      &.wb-is-showing
+        opacity: 1
+        transform: translateX(0px)
+      &:hover
+        transform: scale(0.96)
+
+    a.web-build.one
+      //box-shadow: 0 0 5px 0 black
+      background:
+        image: url(../assets/img/ncc-ss.jpg)
+        size: cover
+        position: center center
+        repeat: no-repeat
+
+    a.web-build.two
+      //box-shadow: 0 0 5px 0 black
+      background:
+        image: url(../assets/img/zaina-ss.jpg)
+        size: cover
+        position: top center
+        repeat: no-repeat
+
+
+    a.web-build.three
+      //box-shadow: 0 0 1px 0 black
+      background:
+        image: url(../assets/img/zachary-newton-ss.jpg)
+        size: cover
+        position: center center
+        repeat: no-repeat
+
+    a.web-build.four
+      //box-shadow: 0 0 5px 0 black
+      background: white
+        image: url(../assets/img/question.svg)
+        size: contain
+        position: center center
+        //repeat: no-repeat
+
+
+
+
+  h6
+    transition: all 0.4s ease-in-out
+    padding: 0px
+    margin: 0px
+    color: $light-blue
+    background: rgba(240,240,240,0.9)
+    width: 100%
+    text-align: center
+    padding-top: 61px
+    border-radius: 10px
+
+    &:hover
+      background: rgba(240,240,240,0.0)
+      color: rgba(255,255,255,0.0)
+
+
+//View More Button
+.view-more-web-design-wrapper
+  margin: auto
+  margin-top: 1.5em
+  margin-bottom: -57px
+  width: 100%
+  background: $view-more
+  color: white
+  opacity: 0
+  p.view-more-web-design
+    color: white
+    text-align: center
+    max-width: 100%
+    background: none
+    text-indent: 0
+    cursor: pointer
+    margin: 0
+    padding: 10px
+    line-height: 1
+
+
+  &.web-design-page-button
+    animation-name: bounceInRight
+    animation-duration: 0.6s
+    opacity: 1

@@ -1,0 +1,94 @@
+.home-wrap
+  display: flex
+  min-height: 100vh
+  overflow: hidden
+
+  @media (max-width: 775px)
+    display: block
+
+.home-sections
+  flex: 1
+
+
+  section
+    padding: 50px 0
+
+
+    // Flex Classes
+  .flex
+    display: flex
+    flex-direction: rows
+
+  .flex--center
+    justify-content: center
+
+  .flex--space-around
+    justify-content: space-around
+
+  .order-first
+    order: -1
+
+
+// Columns
+.col-1
+  max-width: 300px
+  margin: 0 10px
+  //background: pink
+
+.col-2
+  max-width: 620px
+  margin: 0 10px
+  //background: cyan
+
+.col-3
+  max-width: 300px
+  margin: 0 10px
+  //background: purple
+
+.push-right
+  margin-left: 330px
+
+.push-left
+  margin-right: 330px
+
+@media (max-width: 1075px)
+  .home-sections section.graphic-design .flex
+    display: block
+
+    .col-3.end
+      max-width: 620px
+      margin: auto
+
+  .col-3
+    margin: auto
+
+  .home-sections section.graphic-design .flex .flex--space-around
+    display: flex
+
+
+@media (max-width: 640px)
+  .home-sections .flex
+    display: block
+
+
+  .col-1
+    max-width: 100%
+
+  .col-2
+    width: 100%
+
+  .col-3
+    max-width: 100%
+    margin: 0 10px
+
+  .home-sections section.graphic-design .flex .flex--space-around
+    display: block
+
+  .home-sections section.graphic-design .flex
+    .col-3.end
+      max-width: 100%
+      margin: 0 10px
+
+
+.push-right
+  margin-left: 10px

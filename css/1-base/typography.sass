@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans)
+body
+  font-size: 100%
+  font-family: 'Alegreya Sans', sans-serif
+
+
+$light-blue: #476071
+
+hr.pop-up
+  color: white
+  width: 75%
+  margin-bottom: 2em
+
+h1
+  font-size: 4em
+
+h2
+  font-size: 3.5em
+
+h3
+  font-size: 3em
+
+h4
+  font-size: 2.5em
+
+h5
+  font-size: 2em
+
+h6
+  font-size: 1.5em
+
+p
+  font-size: 1em
+  line-height: 1.5
+  margin-top: 1.5em
+  margin-bottom: 1.5em
+p.full
+  max-width: 620px
+  padding: 10px
+  @media(max-width: 640px)
+    max-width: 25em
+
+a
+  text-decoration: none
+  color: black
+  font-size: .9em
+  line-height: 1.5
+a.link
+  font-size: 1.2em
+  cursor: pointer
+  color: white
+  &:hover
+    color: rgba(255,255,255,0.7)
+
+ul.j
+  color: white
+  text-align: center
+  text-decoration: none
+  text-indent: 0
+  padding: 10px 10px 10px 10px
+  font-size: 1.8em
+
+  li
+    list-style: none
+    font-size: .6em
+    span
+      font-size: .8em
+      color: rgba(255,255,255,0.4)
+      text-align: left
+      a
+        color: rgba(255,255,255,0.9)
+        &:hover
+          color: rgba(255,255,255,0.6)
+
+
+.navigation  a, .email-link
+  color: #9e9e9e
+  text-decoration: none
+  &:hover
+    color: #000
+  &:active
+    color: #000
+
+.email-link
+  &:hover
+    color: #000
+
+
+@media (max-width: 775px)
+  p
+    max-width: 25em
+    margin-left: auto
+    margin-right: auto

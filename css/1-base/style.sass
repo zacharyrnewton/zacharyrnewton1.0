@@ -1,0 +1,356 @@
+html
+  background: white
+$contact: #2F3C4A
+$contact-h: #374D5E
+$footer-bg: #1C1C1C
+$view-more: #2098d1
+$view-more-hover: #2A7594
+//$pop-up-page: #2A7594
+//$pop-up-page-gradient: linear-gradient(#2A7594, #123240)
+$cinematography-pup: #a8a8a6
+$photography-pup: #22445f
+$sound-pup: #474749
+$gd-pup: #31525b
+$wd-pup: #7F7F7F
+$overlay: url(../assets/img/img-overlay-dia.png)
+$overlay-opac: url(../assets/img/img-overlay-dia-opac.png)
+
+
+
+.hire-me
+  text-align: center
+  margin-top: 1.5em
+  margin-bottom: 1.5em
+  a.hire-me
+    transition: all 0.3s ease-in-out
+    color: white
+    padding: 1em 2em
+    border-radius: .25em
+    box-shadow: 0 0 0 1px white
+    &:hover
+      color: black
+      background: white
+
+
+.p-border
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.3)
+  border-radius: 5px
+
+
+
+
+
+// POP-UP WINDOW CLOSE BUTON
+.close-pop-up-botton
+  background: rgba(60,60,70,0.5)
+  box-shadow: 0px 0px 2px rgba(60,60,70,0.5)
+  border-radius: 100%
+  padding: 5px
+  position: fixed
+  right: 0
+  left: auto
+  width: 40px
+  height: 40px
+  margin-right: 20px
+  margin-left: 20px
+  margin-top: -30px
+  cursor: pointer
+  align-items: center
+  span:before,
+  span:after
+    content: ""
+    display: block
+    height: 1px
+    width: 100%
+    background: white
+    position: relative
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1)
+  //span:before
+    top: 17px
+  //span:after
+    top: -17px
+  span:before,
+  span:after
+    transform-origin: center
+    transform: rotate(45deg)
+    top: 20px
+  span:after
+    transform: rotate(-45deg)
+
+  &:hover
+    transition: all 0.09s ease-in-out
+    box-shadow: 0px 0px 8px rgba(60,60,70,0.5)
+.close-pop-up-botton
+  &.is-open
+    animation-name: rotateIn
+    animation-duration: 1s
+    animation-fill-mode: both
+    animation-delay: 0.3s
+@media (max-width: 775px)
+  .close-pop-up-botton
+    left: 0
+    right: auto
+
+    // POP-UP WINDOW CLOSE BUTON END
+
+
+
+
+
+                                                                    //ANIMATIONS
+
+//close-pop-up-botton animation
+@keyframes rotateIn
+  from
+    -webkit-transform-origin: center
+    transform-origin: center
+    -webkit-transform: rotate3d(0, 0, 1, -200deg)
+    transform: rotate3d(0, 0, 1, -200deg)
+    opacity: 0
+  to
+    -webkit-transform-origin: center
+    transform-origin: center
+    -webkit-transform: none
+    transform: none
+    opacity: 1
+
+//Animation
+@keyframes pulse
+  from
+    transform: scale3d(1, 1, 1)
+
+  30%
+    transform: scale3d(1.25, 1.25, 1.25)
+
+  to
+    transform: scale3d(1, 1, 1)
+
+
+//Animation
+@keyframes tada
+  from
+    -webkit-transform: scale3d(1, 1, 1)
+    transform: scale3d(1, 1, 1)
+  10%, 20%
+    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+  30%, 50%, 70%, 90%
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+  40%, 60%, 80%
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+  to
+    -webkit-transform: scale3d(1, 1, 1)
+    transform: scale3d(1, 1, 1)
+
+
+
+//Animation
+
+@keyframes bounceInRight
+  from, 60%, 75%, 90%, to
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000)
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000)
+
+  from
+    opacity: 0
+    -webkit-transform: translate3d(3000px, 0, 0)
+    transform: translate3d(3000px, 0, 0)
+
+  60%
+    opacity: 1
+    -webkit-transform: translate3d(-25px, 0, 0)
+    transform: translate3d(-25px, 0, 0)
+
+  75%
+    -webkit-transform: translate3d(10px, 0, 0)
+    transform: translate3d(10px, 0, 0)
+
+  90%
+    -webkit-transform: translate3d(-5px, 0, 0)
+    transform: translate3d(-5px, 0, 0)
+
+  to
+    -webkit-transform: none
+    transform: none
+
+
+
+
+@keyframes fadeInUp
+  from
+    opacity: 0
+    -webkit-transform: translate3d(0, 100%, 0)
+    transform: translate3d(0, 100%, 0)
+  to
+    opacity: 1
+    -webkit-transform: none
+    transform: none
+
+@keyframes pageSlideIn
+  from
+    opacity: 0
+  1%
+    opacity: 1
+
+  to
+    opacity: 1
+    transform: translateX(0)
+    transform: translateY(0)
+
+
+
+
+
+
+
+//HOVERS
+
+
+
+.hvr-grow
+  display: inline-block
+  vertical-align: middle
+  -webkit-transform: translateZ(0)
+  transform: translateZ(0)
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+  -webkit-backface-visibility: hidden
+  backface-visibility: hidden
+  -moz-osx-font-smoothing: grayscale
+  -webkit-transition-duration: 0.3s
+  transition-duration: 0.3s
+  -webkit-transition-property: transform
+  transition-property: transform
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active
+  -webkit-transform: scale(1.1)
+  transform: scale(1.1)
+
+
+
+
+.hvr-shutter-out-horizontal
+  display: inline-block
+  vertical-align: middle
+  -webkit-transform: translateZ(0)
+  transform: translateZ(0)
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+  -webkit-backface-visibility: hidden
+  backface-visibility: hidden
+  -moz-osx-font-smoothing: grayscale
+  position: relative
+  background: #e1e1e1
+  -webkit-transition-property: color
+  transition-property: color
+  -webkit-transition-duration: 0.3s
+  transition-duration: 0.3s
+.hvr-shutter-out-horizontal:before
+  content: ""
+  position: absolute
+  z-index: -1
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background: #2098d1
+  -webkit-transform: scaleX(0)
+  transform: scaleX(0)
+  -webkit-transform-origin: 50%
+  transform-origin: 50%
+  -webkit-transition-property: transform
+  transition-property: transform
+  -webkit-transition-duration: 0.3s
+  transition-duration: 0.3s
+  -webkit-transition-timing-function: ease-out
+  transition-timing-function: ease-out
+.hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active
+  color: white
+.hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before
+  -webkit-transform: scaleX(1)
+  transform: scaleX(1)
+
+
+
+.hvr-radial-out
+  display: inline-block
+  vertical-align: middle
+  -webkit-transform: translateZ(0)
+  transform: translateZ(0)
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0)
+  -webkit-backface-visibility: hidden
+  backface-visibility: hidden
+  -moz-osx-font-smoothing: grayscale
+  position: relative
+  overflow: hidden
+  background: #e1e1e1
+  -webkit-transition-property: color
+  transition-property: color
+  -webkit-transition-duration: 0.3s
+  transition-duration: 0.3s
+.hvr-radial-out:before
+  content: ""
+  position: absolute
+  z-index: -1
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background: #66BD2B
+  border-radius: 100%
+  -webkit-transform: scale(0)
+  transform: scale(0)
+  -webkit-transition-property: transform
+  transition-property: transform
+  -webkit-transition-duration: 0.3s
+  transition-duration: 0.3s
+  -webkit-transition-timing-function: ease-out
+  transition-timing-function: ease-out
+.hvr-radial-out:hover, .hvr-radial-out:focus, .hvr-radial-out:active
+  color: white
+.hvr-radial-out:hover:before, .hvr-radial-out:focus:before, .hvr-radial-out:active:before
+  -webkit-transform: scale(2)
+  transform: scale(2)
+.hvr-radial-out:active:after
+  background: white
+
+
+.hvr-bounce-to-bottom
+  display: inline-block
+  vertical-align: middle
+  -webkit-transform: translateZ(0)
+  transform: translateZ(0)
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+  -webkit-backface-visibility: hidden
+  backface-visibility: hidden
+  -moz-osx-font-smoothing: grayscale
+  position: relative
+  -webkit-transition-property: color
+  transition-property: color
+  -webkit-transition-duration: 0.5s
+  transition-duration: 0.5s
+.hvr-bounce-to-bottom:before
+  content: ""
+  position: absolute
+  z-index: -1
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background: $view-more-hover
+  -webkit-transform: scaleY(0)
+  transform: scaleY(0)
+  -webkit-transform-origin: 50% 0
+  transform-origin: 50% 0
+  -webkit-transition-property: transform
+  transition-property: transform
+  -webkit-transition-duration: 0.5s
+  transition-duration: 0.5s
+  -webkit-transition-timing-function: ease-out
+  transition-timing-function: ease-out
+.hvr-bounce-to-bottom:hover, .hvr-bounce-to-bottom:focus, .hvr-bounce-to-bottom:active
+  color: white
+.hvr-bounce-to-bottom:hover:before, .hvr-bounce-to-bottom:focus:before, .hvr-bounce-to-bottom:active:before
+  -webkit-transform: scaleY(1)
+  transform: scaleY(1)
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66)
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66)
