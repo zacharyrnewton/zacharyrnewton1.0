@@ -1,4 +1,4 @@
-//Just for steve
+//Just for steve since he doesn't like my tagline
 $(function() {
     $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
       function(json) {
@@ -8,21 +8,19 @@ $(function() {
     );
   });
 
-
 //Window Scroll Reveals
 $(window).scroll(function(){
   var wScroll = $(this).scrollTop();
-
 
 //Hero Parallax
   $('.home h1').css({
     'transform' : 'translate(0px, '+ wScroll /3 +'%)'
   });
 
-var fadeStart=0, // 100px scroll or less will equiv to 1 opacity
-  fadeUntil=500, // 200px scroll or more will equiv to 0 opacity
+var fadeStart=0,
+  fadeUntil=500,
   fading = $('#tagline')
-;
+  ;
 
 $(window).bind('scroll', function(){
     var offset = $(document).scrollTop(),
@@ -35,12 +33,6 @@ $(window).bind('scroll', function(){
     }
     fading.css('opacity',opacity);
 });
-
-//scroll button opacity
-
-
-
-
 
   //Cinematography Reveal
   if(wScroll > $('.pro-body').offset().top - ($(window).height() / 1.2)) {
@@ -76,9 +68,6 @@ $(window).bind('scroll', function(){
 
   }
 
-
-
-
   //Photography Reveal
   if(wScroll > $('.instagram-badge').offset().top - ($(window).height() / 1)) {
 
@@ -91,8 +80,6 @@ $(window).bind('scroll', function(){
 
   }
 
-
-
   if(wScroll > $('.view-more-photography-wrapper').offset().top - ($(window).height() / 1)) {
 
     $('.view-more-photography-wrapper').each(function(i){
@@ -103,6 +90,7 @@ $(window).bind('scroll', function(){
     });
 
   }
+
   if(wScroll > $('.instagram-glyph').offset().top - ($(window).height() / 1.2)) {
 
     $('.instagram-glyph').each(function(i){
@@ -113,8 +101,6 @@ $(window).bind('scroll', function(){
     });
 
   }
-
-
 
 //Sound Reveal
   if(wScroll > $('.view-more-sound-wrapper').offset().top - ($(window).height() / 1)) {
@@ -138,9 +124,6 @@ $(window).bind('scroll', function(){
     });
 
   }
-
-
-
 
 //Graphic-Design Reveal
   if(wScroll > $('.graphic-design p').offset().top - ($(window).height() / 1.2)) {
@@ -166,7 +149,6 @@ $(window).bind('scroll', function(){
   }
 
 //Web-Design Reveal
-
   if(wScroll > $('.view-more-web-design-wrapper').offset().top - ($(window).height() / 1)) {
 
     $('.view-more-web-design-wrapper').each(function(i){
@@ -177,6 +159,7 @@ $(window).bind('scroll', function(){
     });
 
   }
+
   if(wScroll > $('.web-build-container').offset().top - ($(window).height() / 1)) {
 
     $('.web-design a.web-build').each(function(i){
@@ -190,9 +173,6 @@ $(window).bind('scroll', function(){
 
 });
 
-
-
-
 //Mobile Navigation Toggle
 function mobileNav() {
   $('.mobile-nav-toggle').on('click', function(){
@@ -201,7 +181,6 @@ function mobileNav() {
     else { $('.mobile-nav-toggle, .mobile-nav').addClass('is-open'); }
   });
 }
-
 
 //Smooth Scroll
 function smoothScroll (duration) {
@@ -218,7 +197,6 @@ function smoothScroll (duration) {
 	});
 }
 
-
 //Navigation Shrink
 function navShrink() {
   $('a[href^="#"]').on('click', function() {
@@ -226,18 +204,13 @@ function navShrink() {
   );
 }
 
-
-
-
 // SOUND EQ BARS
-
 $(window).scroll(function(){
   var bars = document.getElementsByClassName('eq-bar');
   [].forEach.call(bars, function (bar) {
     bar.style.height = Math.random() * 100 + '%';
   });
 });
-
 
 //cinematographyPage
 function cinematographyPage() {
@@ -247,6 +220,7 @@ function cinematographyPage() {
     else { $('.close-pop-up-botton, section.cinematography-page, body').addClass('is-open'); }
   });
 }
+
 function cinematographyPageClose() {
   $('.close-pop-up-botton').on('click', function(){
     var status = $(this).hasClass('is-open');
@@ -254,7 +228,6 @@ function cinematographyPageClose() {
     else { $('section.cinematography-page, .close-pop-up-botton, body').removeClass('is-open'); }
   });
 }
-
 
 //photographyPage
 function photographyPage() {
@@ -264,6 +237,7 @@ function photographyPage() {
     else { $('section.photography-page, .close-pop-up-botton, body').addClass('is-open'); }
   });
 }
+
 function photographyPageClose() {
   $('.close-pop-up-botton').on('click', function(){
     var status = $(this).hasClass('is-open');
@@ -271,8 +245,6 @@ function photographyPageClose() {
     else { $('section.photography-page, .close-pop-up-botton, body').removeClass('is-open'); }
   });
 }
-
-
 
 //soundPage
 function soundPage() {
@@ -282,6 +254,7 @@ function soundPage() {
     else { $('section.sound-page, .close-pop-up-botton, body').addClass('is-open'); }
   });
 }
+
 function soundPageClose() {
   $('.close-pop-up-botton').on('click', function(){
     var status = $(this).hasClass('is-open');
@@ -289,7 +262,6 @@ function soundPageClose() {
     else { $('section.sound-page, .close-pop-up-botton, body').removeClass('is-open'); }
   });
 }
-
 
 //graphicPage
 function graphicPage() {
@@ -299,6 +271,7 @@ function graphicPage() {
     else { $('section.graphic-design-page, .close-pop-up-botton, body').addClass('is-open'); }
   });
 }
+
 function graphicPageClose() {
   $('.close-pop-up-botton').on('click', function(){
     var status = $(this).hasClass('is-open');
@@ -306,8 +279,6 @@ function graphicPageClose() {
     else { $('section.graphic-design-page, .close-pop-up-botton, body').removeClass('is-open'); }
   });
 }
-
-
 
 //webPage
 function webPage() {
@@ -317,6 +288,7 @@ function webPage() {
     else { $('section.web-design-page, .close-pop-up-botton, body').addClass('is-open'); }
   });
 }
+
 function webPageClose() {
   $('.close-pop-up-botton').on('click', function(){
     var status = $(this).hasClass('is-open');
@@ -324,11 +296,6 @@ function webPageClose() {
     else { $('section.web-design-page, .close-pop-up-botton, body').removeClass('is-open'); }
   });
 }
-
-
-
-
-
 
 $(function() {
   mobileNav();

@@ -5,8 +5,6 @@ $contact-h: #374D5E
 $footer-bg: #1C1C1C
 $view-more: #2098d1
 $view-more-hover: #2A7594
-//$pop-up-page: #2A7594
-//$pop-up-page-gradient: linear-gradient(#2A7594, #123240)
 $cinematography-pup: #a8a8a6
 $photography-pup: #22445f
 $sound-pup: #474749
@@ -15,12 +13,11 @@ $wd-pup: #7F7F7F
 $overlay: url(../assets/img/img-overlay-dia.png)
 $overlay-opac: url(../assets/img/img-overlay-dia-opac.png)
 
-
-
 .hire-me
   text-align: center
   margin-top: 1.5em
   margin-bottom: 1.5em
+
   a.hire-me
     transition: all 0.3s ease-in-out
     color: white
@@ -31,14 +28,9 @@ $overlay-opac: url(../assets/img/img-overlay-dia-opac.png)
       color: black
       background: white
 
-
 .p-border
   box-shadow: 0 0 0 1px rgba(255,255,255,0.3)
   border-radius: 5px
-
-
-
-
 
 // POP-UP WINDOW CLOSE BUTON
 .close-pop-up-botton
@@ -65,10 +57,6 @@ $overlay-opac: url(../assets/img/img-overlay-dia-opac.png)
     background: white
     position: relative
     transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1)
-  //span:before
-    top: 17px
-  //span:after
-    top: -17px
   span:before,
   span:after
     transform-origin: center
@@ -80,12 +68,14 @@ $overlay-opac: url(../assets/img/img-overlay-dia-opac.png)
   &:hover
     transition: all 0.09s ease-in-out
     box-shadow: 0px 0px 8px rgba(60,60,70,0.5)
+
 .close-pop-up-botton
   &.is-open
     animation-name: rotateIn
     animation-duration: 1s
     animation-fill-mode: both
     animation-delay: 0.3s
+
 @media (max-width: 775px)
   .close-pop-up-botton
     left: 0
@@ -125,7 +115,6 @@ $overlay-opac: url(../assets/img/img-overlay-dia-opac.png)
   to
     transform: scale3d(1, 1, 1)
 
-
 //Animation
 @keyframes tada
   from
@@ -143,8 +132,6 @@ $overlay-opac: url(../assets/img/img-overlay-dia-opac.png)
   to
     -webkit-transform: scale3d(1, 1, 1)
     transform: scale3d(1, 1, 1)
-
-
 
 //Animation
 
@@ -175,9 +162,6 @@ $overlay-opac: url(../assets/img/img-overlay-dia-opac.png)
     -webkit-transform: none
     transform: none
 
-
-
-
 @keyframes fadeInUp
   from
     opacity: 0
@@ -199,15 +183,7 @@ $overlay-opac: url(../assets/img/img-overlay-dia-opac.png)
     transform: translateX(0)
     transform: translateY(0)
 
-
-
-
-
-
-
 //HOVERS
-
-
 
 .hvr-grow
   display: inline-block
@@ -225,9 +201,6 @@ $overlay-opac: url(../assets/img/img-overlay-dia-opac.png)
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active
   -webkit-transform: scale(1.1)
   transform: scale(1.1)
-
-
-
 
 .hvr-shutter-out-horizontal
   display: inline-block
@@ -268,8 +241,6 @@ $overlay-opac: url(../assets/img/img-overlay-dia-opac.png)
 .hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before
   -webkit-transform: scaleX(1)
   transform: scaleX(1)
-
-
 
 .hvr-radial-out
   display: inline-block
@@ -312,7 +283,6 @@ $overlay-opac: url(../assets/img/img-overlay-dia-opac.png)
   transform: scale(2)
 .hvr-radial-out:active:after
   background: white
-
 
 .hvr-bounce-to-bottom
   display: inline-block

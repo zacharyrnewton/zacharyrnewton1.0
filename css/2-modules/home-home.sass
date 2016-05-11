@@ -1,7 +1,6 @@
 section.home
   position: relative
   z-index: 1
-  //filter: grayscale(20%)
   background:
     image: url(../assets/img/hero.jpg)
     attachment: fixed
@@ -9,6 +8,7 @@ section.home
     position: bottom center
     repeat: no-repeat
   overflow: hidden
+
 section.home:after
   content: ""
   position: absolute
@@ -23,9 +23,8 @@ section.home:after
   opacity: 0.3
   @media(max-width: 775px)
     opacity: 0.2
+
 section.home
-
-
 
   h1
     box-shadow: 0 0 0 1px white
@@ -57,12 +56,14 @@ section.home
       max-width: 500px
       margin-top: 240px
       margin-bottom: 150px
+
   @media (max-width: 600px)
     h1
       font-size: 3.5em
       max-width: 400px
       margin-top: 190px
       margin-bottom: 100px
+
   @media (max-width: 580px)
     h1
       font-size: 3em
@@ -70,14 +71,9 @@ section.home
       margin-top: 165px
       margin-bottom: 75px
 
-
-
-
 @media (max-width: 1024px)
   section.home
     background-attachment: scroll
-
-
 
 @keyframes fadeIn
   from

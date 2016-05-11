@@ -8,7 +8,6 @@
 
     .header-position
       position: fixed
-      //background: white
       top: 30px
       left: 0
       bottom: 30px
@@ -25,7 +24,6 @@
         repeat: no-repeat
         position: center
         size: contain
-        //color: pink
       height: 50px
       padding: 0
       margin: 0
@@ -51,12 +49,9 @@
     display: none
     width: 50px
     height: 50px
-    //background: pink
     margin-right: 20px
     align-items: center
     cursor: pointer
-
-
 
     span,
     span:before,
@@ -69,14 +64,11 @@
       position: relative
       transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1)
 
-
-
     span:before
       top: 15px
 
     span:after
       top: -17px
-
 
     &.is-open span
       background: transparent
@@ -91,12 +83,10 @@
     &.is-open span:after
       transform: rotate(-45deg)
 
-
 //Mobile Nav
 .mobile-nav
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1)
   position: fixed
-  //display: none
   width: 100%
   background: white
   padding: 40px 0 20px
@@ -111,7 +101,6 @@
     text-align: center
     margin-bottom: 15px
 
-
 @media (max-width: 775px)
   .home-wrap
 
@@ -122,7 +111,6 @@
           text-size-adjust: none
 
     header
-      // width was auto,position, top, and z-index added
       background: white
       position: fixed
       width: 100%
@@ -141,7 +129,6 @@
       .site-nav,
       .email-link
         display: none
-
 
       .logo
         height: 25px
