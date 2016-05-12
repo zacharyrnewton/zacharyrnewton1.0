@@ -874,6 +874,7 @@ section.home:after {
 }
 section.home h1 {
   box-shadow: 0 0 0 1px white;
+  border-radius: 4px;
   background: rgba(0, 0, 0, 0.1);
   margin: auto;
   margin-top: 200px;
