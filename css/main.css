@@ -847,10 +847,11 @@ ul.j li span a:hover {
 section.home {
   position: relative;
   z-index: 1;
-  background-image: url(../assets/img/hero.jpg);
+  height: 85vh;
+  background-image: url(../assets/img/photography.jpg);
   background-attachment: fixed;
   background-size: cover;
-  background-position: bottom center;
+  background-position: top center;
   background-repeat: no-repeat;
   overflow: hidden;
 }
@@ -873,12 +874,8 @@ section.home:after {
   }
 }
 section.home h1 {
-  box-shadow: 0 0 0 1px white;
-  border-radius: 4px;
-  background: rgba(0, 0, 0, 0.1);
   margin: auto;
-  margin-top: 200px;
-  margin-bottom: 200px;
+  margin-top: 35vh;
   max-width: 800px;
   text-align: center;
   color: white;
@@ -887,44 +884,9 @@ section.home h1 {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
 }
-@media (max-width: 1000px) {
-  section.home h1 {
-    max-width: 700px;
-  }
-}
-@media (max-width: 900px) {
-  section.home h1 {
-    max-width: 630px;
-  }
-}
-@media (max-width: 800px) {
-  section.home h1 {
-    max-width: 560px;
-    margin-top: 290px;
-  }
-}
-@media (max-width: 660px) {
-  section.home h1 {
-    max-width: 500px;
-    margin-top: 240px;
-    margin-bottom: 150px;
-  }
-}
-@media (max-width: 600px) {
-  section.home h1 {
-    font-size: 3.5em;
-    max-width: 400px;
-    margin-top: 190px;
-    margin-bottom: 100px;
-  }
-}
-@media (max-width: 580px) {
-  section.home h1 {
-    font-size: 3em;
-    max-width: 360px;
-    margin-top: 165px;
-    margin-bottom: 75px;
-  }
+section.home h1 span {
+  font-weight: 100;
+  font-size: 0.4em;
 }
 
 @media (max-width: 1024px) {
@@ -995,7 +957,7 @@ section.about .avatar {
 section.photography {
   position: relative;
   z-index: 1;
-  background-image: url(../assets/img/photography.jpg);
+  background-image: url(../assets/img/hero.jpg);
   background-position: left center;
   background-size: cover;
   background-repeat: no-repeat;

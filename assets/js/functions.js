@@ -1,12 +1,12 @@
 //Just for steve since he doesn't like my tagline
-$(function() {
+/*$(function() {
     $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
       function(json) {
         if  (json.ip === '50.248.3.174' || json.ip === '4.34.212.243')
         {$('#tagline').text("Working in All Things Production");}
       }
     );
-  });
+  });*/
 
 //Window Scroll Reveals
 $(window).scroll(function(){
@@ -57,7 +57,7 @@ $(window).bind('scroll', function(){
 
   }
 
-  if(wScroll > $('.view-more-cinematography-wrapper').offset().top - ($(window).height() / 1)) {
+  /*if(wScroll > $('.view-more-cinematography-wrapper').offset().top - ($(window).height() / 1)) {
 
     $('.view-more-cinematography-wrapper').each(function(i){
 
@@ -66,7 +66,7 @@ $(window).bind('scroll', function(){
       }, 200 * (i+1));
     });
 
-  }
+  }*/
 
   //Photography Reveal
   if(wScroll > $('.instagram-badge').offset().top - ($(window).height() / 1)) {
@@ -80,7 +80,7 @@ $(window).bind('scroll', function(){
 
   }
 
-  if(wScroll > $('.view-more-photography-wrapper').offset().top - ($(window).height() / 1)) {
+  /*if(wScroll > $('.view-more-photography-wrapper').offset().top - ($(window).height() / 1)) {
 
     $('.view-more-photography-wrapper').each(function(i){
 
@@ -89,7 +89,7 @@ $(window).bind('scroll', function(){
       }, 200 * (i+1));
     });
 
-  }
+  }*/
 
   if(wScroll > $('.instagram-glyph').offset().top - ($(window).height() / 1.2)) {
 
@@ -103,7 +103,7 @@ $(window).bind('scroll', function(){
   }
 
 //Sound Reveal
-  if(wScroll > $('.view-more-sound-wrapper').offset().top - ($(window).height() / 1)) {
+  /*if(wScroll > $('.view-more-sound-wrapper').offset().top - ($(window).height() / 1)) {
 
     $('.view-more-sound-wrapper').each(function(i){
 
@@ -112,7 +112,7 @@ $(window).bind('scroll', function(){
       }, 200 * (i+1));
     });
 
-  }
+  }*/
 
   if(wScroll > $('.eq-bar').offset().top - ($(window).height() / 1)) {
 
@@ -137,7 +137,7 @@ $(window).bind('scroll', function(){
 
   }
 
-  if(wScroll > $('.view-more-graphic-design-wrapper').offset().top - ($(window).height() / 1)) {
+  /*if(wScroll > $('.view-more-graphic-design-wrapper').offset().top - ($(window).height() / 1)) {
 
     $('.view-more-graphic-design-wrapper').each(function(i){
 
@@ -146,10 +146,10 @@ $(window).bind('scroll', function(){
       }, 200 * (i+1));
     });
 
-  }
+  }*/
 
 //Web-Design Reveal
-  if(wScroll > $('.view-more-web-design-wrapper').offset().top - ($(window).height() / 1)) {
+  /*if(wScroll > $('.view-more-web-design-wrapper').offset().top - ($(window).height() / 1)) {
 
     $('.view-more-web-design-wrapper').each(function(i){
 
@@ -158,7 +158,7 @@ $(window).bind('scroll', function(){
       }, 200 * (i+1));
     });
 
-  }
+  }*/
 
   if(wScroll > $('.web-build-container').offset().top - ($(window).height() / 1)) {
 
