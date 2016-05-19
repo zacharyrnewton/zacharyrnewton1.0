@@ -792,7 +792,7 @@ ul.j li span a:hover {
   margin-bottom: 15px;
 }
 
-@media (max-width: 775px) {
+@media (max-width: 2000px) {
   .home-wrap ul.navigation li a {
     font-size: 1em;
     -webkit-text-size-adjust: none;
@@ -847,7 +847,7 @@ ul.j li span a:hover {
 section.home {
   position: relative;
   z-index: 1;
-  height: 50vh;
+  height: 60vh;
   background-image: url(../assets/img/hero.jpg);
   background-attachment: fixed;
   background-size: cover;
@@ -875,7 +875,7 @@ section.home:after {
 }
 section.home h1 {
   margin: auto;
-  margin-top: 22vh;
+  margin-top: 28vh;
   max-width: 800px;
   text-align: center;
   color: white;
@@ -960,7 +960,7 @@ section.photography {
   z-index: 1;
   background: #404040;
   background-image: url(../assets/img/photography.jpg);
-  background-position: left center;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1239,6 +1239,7 @@ section.sound .body-wrapper {
   margin-top: -11px;
   margin-bottom: -50px;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 section.sound .body-wrapper:after {
   content: "";
