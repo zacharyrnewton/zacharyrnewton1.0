@@ -37,20 +37,21 @@ html(lang="en-US")
           a(href="mailto:zacharyrnewton@gmail.com").email-link +email me
           .mobile-nav-toggle: span
 
+
     .home-sections
       section.home#home
         h1#tagline Zachary Newton
           br
           span Designer \ Developer \ Producer
+          
 
       section.about#about
         .flex.flex--space-around
           .col-1
             .avatar
-            //h5 About Me
-
           .col-1.about-me-text
             h4 Zachary likes to make the world around him better by...
+            
 
       section.cinematography#cinematography
         .cinematography-head
@@ -61,24 +62,14 @@ html(lang="en-US")
 
         .flex.flex--center.pro-body
           h6 videos comming soon
-          //.col-1.pre-pro
-            h6 Pre-Production
-            p Cinematography is one of those things that tends to be very broad because there is a lot involved. On the side of Pre-Production, I have been working side by side with multiple different writers for a while now so I can be more proficient when I am storyboarding or deciding on what equipment is needed for the job. I have had the great opportunity on many occasions to work on the script and even manage production teams as we worked our way through Production and onto Post.
-
-          //.col-1.post-pro
-            h6 Post-Production
-            p I tend to spend most of my time between the two over here in Post. While knowing what goes on in Pre-Production is important, this is where the most fun and sometimes most challenging tasks are. Once the footage is captured, there are many things yet to happen, these can include: cutting footage, working on visual effects, mixing audio, dubbing, color grading, and more. These are where I come in. I am very passionate about getting the best quality possible out of each of these areas.
-        //.view-more-cinematography-wrapper.hvr-bounce-to-bottom
-          //p.view-more-cinematography View More on Cinematography
-
+          
+          
       section.photography#photography
-        //h3 Photography
         .flex.flex--space-around
           .col-1.photography-text
             h2 ...taking pictures of awsome things...
           .col-1
             .instagram-badge
-              .instagram-glyph
               blockquote.instagram-media(data-instgrm-version='7', style=' background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);')
                 div(style='padding:8px;')
                   div(style=' background:#F8F8F8; line-height:0; margin-top:40px; padding:62.4537037037% 0; text-align:center; width:100%;')
@@ -91,12 +82,9 @@ html(lang="en-US")
 
               a(href="https://www.instagram.com/zacharyrnewton/" target="_blank").ig-button.hvr-radial-out Follow
 
-        //.view-more-photography-wrapper.hvr-bounce-to-bottom
-          //p.view-more-photography View More on Photography
 
       section.sound#sound
         .header-wrapper
-          //h3 Sound Engineering
           h2 ...making everything around him sound great...
           .eq-container
             .eq-bar
@@ -159,23 +147,17 @@ html(lang="en-US")
             .eq-bar
         .body-wrapper
           .flex.flex--center
-            
           h6(style="color: white; text-align: center;") Content comming soon
 
+
       section.graphic-design#graphic-design
-        //h3 Graphic-Design
         .flex.flex--center
-          h2 ...fabricating the things you see all over...
+          h2 ...fabricating the things you see everywhere...
         h6 Content comming soon
+
 
       section.web-design#web-design
         h2 ...and of course, making beautiful websites for everyone.
-        .flex.flex--center
-          //.col-1
-            p Web Design. Well, like most cases, I saved my favorite for last. At the end of the year 2014, I started getting asked to help design and build websites for multiple people and companies. I originally got on board with a few front end developers so I could start to learn the process of Web Design. Once I started learning side by side with front end developers, I really got into Web Design. Web Design is what I find myself the most passionate about nowadays. Every day I push myself to learn
-
-          //.col-1
-            p.no-indent something new and expand my development skills. My goal is to become a “Full Stack Developer”. A Full Stack Developer is someone who is experienced in both Front-End and Back-End Development (these include databases and programming languages such as: PHP, HTML, CSS, JAVASCRIPT, and anything else in-between). You can take a look below at some of my favorite projects that I have accomplished. Email me and let me know what I can do for you!
         .web-design-body
           .web-build-container
             .col-2
@@ -190,17 +172,10 @@ html(lang="en-US")
 
               a(href="mailto:zacharyrnewton@gmail.com?subject=  I would like to be your next project").web-build.four
                 h6 What's Next?
-
-          //.view-more-web-design-wrapper.hvr-bounce-to-bottom
-            //p.view-more-web-design View More on Web-Design
+                
 
       include ./footer.jade
-    include ./cinematography-page.jade
-    include ./photography-page.jade
-    include ./sound-page.jade
-    include ./graphic-design-page.jade
-    include ./web-design-page.jade
 
-    //script(src="/assets/js/functions.js")
+
     script(src="/assets/js/min/jquery-2.2.3.min.js")
     script(src="/assets/js/min/functions-min.js")

@@ -60,7 +60,7 @@
 	"\/_jadefiles\/sound-page.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_jadefiles\/sound-page.jade",
 		"outputAbbreviatedPath": "\/_jadefiles\/sound-page.html",

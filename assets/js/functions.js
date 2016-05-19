@@ -25,17 +25,6 @@ $(window).bind('scroll', function(){
 });
 
   //Cinematography Reveal
-  if(wScroll > $('.pro-body').offset().top - ($(window).height() / 1.2)) {
-
-    $('.pre-pro, .post-pro').each(function(i){
-
-      setTimeout(function(){
-        $('.pre-pro, .post-pro').eq(i).addClass('pro-body-is-visable');
-      }, 200 * (i+1));
-    });
-
-  }
-
   if(wScroll > $('.you-tube-badge').offset().top - ($(window).height() / 1.2)) {
 
     $('.you-tube-badge').each(function(i){
@@ -47,30 +36,18 @@ $(window).bind('scroll', function(){
 
   }
 
-  //Photography Reveal
-  if(wScroll > $('.instagram-badge').offset().top - ($(window).height() / 1)) {
+  if(wScroll > $('.ig-button').offset().top - ($(window).height() / 1.1)) {
 
-    $('.instagram-badge').each(function(i){
+    $('.ig-button').each(function(i){
 
       setTimeout(function(){
-        $('.instagram-badge').eq(i).addClass('photography-is-visable');
+        $('.ig-button').eq(i).addClass('animate');
       }, 200 * (i+1));
     });
 
   }
 
-
-  if(wScroll > $('.instagram-glyph').offset().top - ($(window).height() / 1.2)) {
-
-    $('.instagram-glyph').each(function(i){
-
-      setTimeout(function(){
-        $('.instagram-glyph').eq(i).addClass('is-tada');
-      }, 200 * (i+1));
-    });
-
-  }
-
+//sound
   if(wScroll > $('.eq-bar').offset().top - ($(window).height() / 1)) {
 
     $('.eq-bar').each(function(i){
