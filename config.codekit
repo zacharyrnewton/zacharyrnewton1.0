@@ -222,6 +222,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/ruby-blog-ss.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 69414,
+		"inputAbbreviatedPath": "\/assets\/img\/ruby-blog-ss.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/ruby-blog-ss.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/sound.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -251,17 +262,6 @@
 		"initialSize": 48652,
 		"inputAbbreviatedPath": "\/assets\/img\/youtube-play-button.png",
 		"outputAbbreviatedPath": "\/assets\/img\/youtube-play-button.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/zachary-newton-ss.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 41796,
-		"inputAbbreviatedPath": "\/assets\/img\/zachary-newton-ss.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/zachary-newton-ss.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

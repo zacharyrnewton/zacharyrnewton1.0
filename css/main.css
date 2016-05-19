@@ -986,6 +986,7 @@ section.photography h3 {
   font-weight: 400;
 }
 section.photography h2 {
+  text-align: center;
   margin-top: 30%;
   text-indent: 1em;
   color: white;
@@ -1008,6 +1009,7 @@ section.photography .instagram-badge {
 section.photography .instagram-badge a.ig-button {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  margin-bottom: 30px;
   margin-top: 20px;
   color: #4090DB;
   padding: 4px;
@@ -1331,6 +1333,10 @@ section.graphic-design h2 {
   text-align: center;
   font-weight: 300;
 }
+section.graphic-design h6 {
+  color: white;
+  text-align: center;
+}
 section.graphic-design p.no-indent {
   text-indent: 0;
 }
@@ -1426,13 +1432,14 @@ section.web-design .web-design-body:after {
   z-index: -1;
   opacity: 0.3;
 }
-section.web-design h3 {
+section.web-design h2 {
   text-align: center;
-  background: rgba(255, 255, 255, 0.5);
-  width: 6em;
+  max-width: 10em;
   margin-left: auto;
   margin-right: auto;
-  font-weight: 400;
+  font-weight: 300;
+  padding-bottom: 2em;
+  padding-top: 1em;
 }
 section.web-design p.no-indent {
   text-indent: 0;
@@ -1503,7 +1510,7 @@ section.web-design .web-build-container a.web-build.two {
   background-repeat: no-repeat;
 }
 section.web-design .web-build-container a.web-build.three {
-  background-image: url(../assets/img/zachary-newton-ss.jpg);
+  background-image: url(../assets/img/ruby-blog-ss.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
