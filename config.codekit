@@ -127,7 +127,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
+		"initialSize": 48195,
 		"inputAbbreviatedPath": "\/assets\/img\/hero.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/hero.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -215,7 +215,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 48195,
+		"initialSize": 248749,
 		"inputAbbreviatedPath": "\/assets\/img\/photography.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/photography.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -718,6 +718,15 @@
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"useLibsass": false
+		},
+	"\/index.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [

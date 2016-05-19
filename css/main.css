@@ -848,10 +848,10 @@ section.home {
   position: relative;
   z-index: 1;
   height: 50vh;
-  background-image: url(../assets/img/photography.jpg);
+  background-image: url(../assets/img/hero.jpg);
   background-attachment: fixed;
   background-size: cover;
-  background-position: top center;
+  background-position: bottom center;
   background-repeat: no-repeat;
   overflow: hidden;
 }
@@ -952,14 +952,14 @@ section.about .avatar {
   }
   section.about .col-1.about-me-text {
     max-width: 100%;
-    margin: 0 10px;
   }
 }
 
 section.photography {
   position: relative;
   z-index: 1;
-  background-image: url(../assets/img/hero.jpg);
+  background: #404040;
+  background-image: url(../assets/img/photography.jpg);
   background-position: left center;
   background-size: cover;
   background-repeat: no-repeat;
