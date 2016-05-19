@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans);
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:400,100,300,500,700,800,900);
 body {
   margin: 0px;
 }
@@ -847,7 +847,7 @@ ul.j li span a:hover {
 section.home {
   position: relative;
   z-index: 1;
-  height: 85vh;
+  height: 50vh;
   background-image: url(../assets/img/photography.jpg);
   background-attachment: fixed;
   background-size: cover;
@@ -875,10 +875,11 @@ section.home:after {
 }
 section.home h1 {
   margin: auto;
-  margin-top: 35vh;
+  margin-top: 22vh;
   max-width: 800px;
   text-align: center;
   color: white;
+  font-weight: 200;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
   -webkit-animation-duration: 1s;
@@ -919,6 +920,7 @@ section.about h5 {
   width: 6em;
   color: black;
   text-align: center;
+  font-weight: 400;
 }
 section.about p {
   text-indent: 1em;
@@ -979,6 +981,7 @@ section.photography:after {
 section.photography h3 {
   text-align: center;
   color: white;
+  font-weight: 400;
 }
 section.photography p {
   text-indent: 1em;
@@ -1126,6 +1129,7 @@ section.cinematography h3 {
   text-align: center;
   color: white;
   margin-bottom: 0.7em;
+  font-weight: 400;
 }
 section.cinematography .you-tube-badge {
   text-align: center;
@@ -1157,6 +1161,7 @@ section.cinematography h6 {
   text-align: center;
   color: #394954;
   margin-bottom: 0;
+  font-weight: 300;
 }
 section.cinematography p {
   text-indent: 1em;
@@ -1222,6 +1227,7 @@ section.sound .header-wrapper {
 }
 section.sound .header-wrapper h3 {
   text-align: center;
+  font-weight: 400;
 }
 section.sound .body-wrapper {
   position: relative;
@@ -1347,6 +1353,7 @@ section.graphic-design h3 {
   z-index: 2;
   color: white;
   text-align: center;
+  font-weight: 400;
 }
 section.graphic-design p.no-indent {
   text-indent: 0;
@@ -1449,6 +1456,7 @@ section.web-design h3 {
   width: 6em;
   margin-left: auto;
   margin-right: auto;
+  font-weight: 400;
 }
 section.web-design p.no-indent {
   text-indent: 0;
