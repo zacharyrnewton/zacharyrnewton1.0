@@ -876,6 +876,7 @@ section.home:after {
 section.home h1 {
   margin: auto;
   margin-top: 28vh;
+  font-size: 5em;
   max-width: 800px;
   text-align: center;
   color: white;
@@ -922,10 +923,11 @@ section.about h5 {
   text-align: center;
   font-weight: 400;
 }
-section.about p {
+section.about h4 {
   text-indent: 1em;
   padding: 10px;
   color: #476071;
+  font-weight: 100;
 }
 section.about .col-1.about-me-text {
   max-width: 320px;
@@ -983,10 +985,12 @@ section.photography h3 {
   color: white;
   font-weight: 400;
 }
-section.photography p {
+section.photography h2 {
+  margin-top: 30%;
   text-indent: 1em;
   color: white;
   padding: 10px;
+  font-weight: 300;
 }
 section.photography .col-1.order-first.photography-text {
   -webkit-transition: all 0.4s ease-in;
@@ -998,31 +1002,13 @@ section.photography .instagram-badge {
   -webkit-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
   text-align: center;
-  margin-top: 50%;
-}
-section.photography .instagram-badge .instagram-glyph {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 125px;
-  height: auto;
-  padding-top: 125px;
-  background-image: url(../assets/img/instagram-glyph.png);
-  background-size: 75%;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-section.photography .instagram-badge .instagram-glyph.is-tada {
-  -webkit-animation-name: tada;
-          animation-name: tada;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  max-width: 500px;
+  margin: auto 15px;
 }
 section.photography .instagram-badge a.ig-button {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  margin-top: 20px;
   color: #4090DB;
   padding: 4px;
   background: #FAFAFA;
@@ -1059,33 +1045,12 @@ section.photography .instagram-badge.photography-is-visable {
     margin: 0 10px;
   }
 }
-section.photography .view-more-photography-wrapper {
-  margin: auto;
-  margin-top: 1.5em;
-  margin-bottom: -57px;
-  width: 100%;
-  background: #2098d1;
-  opacity: 0;
-}
-section.photography .view-more-photography-wrapper p.view-more-photography {
-  color: white;
-  background: none;
-  text-align: center;
-  max-width: 100%;
-  cursor: pointer;
-  margin: 0;
-  padding: 10px;
-  line-height: 1;
-  text-indent: 0;
-}
-section.photography .view-more-photography-wrapper.photography-page-button {
-  -webkit-animation-name: bounceInRight;
-          animation-name: bounceInRight;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
-  opacity: 1;
-}
 
+@media (max-width: 640px) {
+  section.photography h2 {
+    margin-top: 0;
+  }
+}
 .home-sections section.cinematography {
   padding-top: 0;
   padding-bottom: 50px;
@@ -1125,11 +1090,11 @@ section.cinematography .cinematography-head:after {
   z-index: -1;
   opacity: 0.3;
 }
-section.cinematography h3 {
+section.cinematography h2 {
   text-align: center;
   color: white;
   margin-bottom: 0.7em;
-  font-weight: 400;
+  font-weight: 300;
 }
 section.cinematography .you-tube-badge {
   text-align: center;
@@ -1161,7 +1126,6 @@ section.cinematography h6 {
   text-align: center;
   color: #394954;
   margin-bottom: 0;
-  font-weight: 300;
 }
 section.cinematography p {
   text-indent: 1em;
@@ -1225,9 +1189,15 @@ section.sound {
 section.sound .header-wrapper {
   background: white;
 }
+section.sound .header-wrapper h2 {
+  text-align: center;
+  font-weight: 300;
+  padding: 60px 20px;
+  margin: auto;
+}
 section.sound .header-wrapper h3 {
   text-align: center;
-  font-weight: 400;
+  font-weight: 300;
 }
 section.sound .body-wrapper {
   position: relative;
@@ -1325,6 +1295,11 @@ section.sound .body-wrapper p.no-indent {
   opacity: 1;
 }
 
+@media (max-width: 640px) {
+  section.sound .body-wrapper h2 {
+    text-indent: 1em;
+  }
+}
 section.graphic-design {
   position: relative;
   z-index: 1;
@@ -1349,12 +1324,12 @@ section.graphic-design:after {
   opacity: 0.3;
 }
 
-section.graphic-design h3 {
+section.graphic-design h2 {
   position: relative;
   z-index: 2;
   color: white;
   text-align: center;
-  font-weight: 400;
+  font-weight: 300;
 }
 section.graphic-design p.no-indent {
   text-indent: 0;
