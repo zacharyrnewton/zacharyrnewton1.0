@@ -323,7 +323,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 48652,
+		"initialSize": 12673,
 		"inputAbbreviatedPath": "\/assets\/img\/youtube-play-button.png",
 		"outputAbbreviatedPath": "\/assets\/img\/youtube-play-button.png",
 		"outputPathIsOutsideProject": 0,
@@ -702,6 +702,15 @@
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"useLibsass": false
+		},
+	"\/index.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [
