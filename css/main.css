@@ -875,7 +875,7 @@ section.home:after {
 }
 section.home h1 {
   margin: auto;
-  margin-top: 24vh;
+  margin-top: 20vh;
   font-size: 5em;
   max-width: 800px;
   text-align: center;
@@ -889,6 +889,7 @@ section.home h1 {
 section.home h1 span {
   font-weight: 100;
   font-size: 0.4em;
+  line-height: 0.5em;
 }
 
 @media (max-width: 500px) {
@@ -966,7 +967,7 @@ section.photography {
   position: relative;
   z-index: 1;
   background: #404040;
-  background-image: url(../assets/img/photography.jpg);
+  background-image: url(../assets/img/photography2.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1165,6 +1166,7 @@ section.cinematography .videos-cont .embed-container iframe, section.cinematogra
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 8px;
 }
 
 section.sound {
@@ -1277,7 +1279,41 @@ section.graphic-design:after {
   opacity: 0.3;
 }
 
+section.graphic-design .logo-container {
+  margin-top: 200px;
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 775px) {
+  section.graphic-design .logo-container {
+    display: block;
+    margin-bottom: 0px;
+  }
+  section.graphic-design .logo-container .advance {
+    margin-top: 50px;
+  }
+}
+section.graphic-design .logo-container .ncc {
+  display: block;
+  margin: auto;
+  height: 100px;
+  width: 327px;
+  background-image: url(../assets/img/ncc-logo.png);
+  background-size: cover;
+}
+section.graphic-design .logo-container .advance {
+  display: block;
+  margin: auto;
+  height: 100px;
+  width: 391px;
+  background-image: url(../assets/img/advance-logo.png);
+  background-size: cover;
+}
 section.graphic-design h2 {
+  margin-top: 100px;
   position: relative;
   z-index: 2;
   color: white;
@@ -1298,15 +1334,6 @@ section.graphic-design p {
   color: white;
   padding: 10px;
   opacity: 0;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  -webkit-transform: translateX(-20px);
-          transform: translateX(-20px);
-}
-section.graphic-design p.gd-is-showing {
-  opacity: 1;
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
 }
 
 @media (max-width: 1075px) {
@@ -1317,6 +1344,16 @@ section.graphic-design p.gd-is-showing {
     background-attachment: scroll;
   }
 }
+@media (max-width: 1075px) and (max-width: 775px) {
+  section.graphic-design .logo-container {
+    display: block;
+    margin-bottom: 0px;
+  }
+  section.graphic-design .logo-container .advance {
+    margin-top: 50px;
+  }
+}
+
 .home-sections section.web-design {
   padding: 50px 0 0 0;
 }

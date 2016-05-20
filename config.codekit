@@ -35,6 +35,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/advance-logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 67481,
+		"inputAbbreviatedPath": "\/assets\/img\/advance-logo.png",
+		"outputAbbreviatedPath": "\/assets\/img\/advance-logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/avatar.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -145,6 +156,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/ncc-logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 48466,
+		"inputAbbreviatedPath": "\/assets\/img\/ncc-logo.png",
+		"outputAbbreviatedPath": "\/assets\/img\/ncc-logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/ncc-ss.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -163,6 +185,17 @@
 		"initialSize": 248749,
 		"inputAbbreviatedPath": "\/assets\/img\/photography.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/photography.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/photography2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.69522e+06,
+		"inputAbbreviatedPath": "\/assets\/img\/photography2.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/photography2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -583,6 +616,15 @@
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"useLibsass": false
+		},
+	"\/index.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [
