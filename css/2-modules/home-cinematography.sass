@@ -76,10 +76,12 @@ section.cinematography
 
   .videos-cont
     transition: 0.3s all ease-in-out
+    transform: translateX(0px)
     opacity: 0
     padding-top: 50px
     margin: auto
     width: 70%
+    border-radius: 8px
     &.vid-slide
       opacity: 1
     @media (max-width: 750px)
@@ -92,6 +94,12 @@ section.cinematography
       height: 0
       overflow: hidden
       max-width: 100%
+      transition: 0.3s all ease-in-out
+      border-radius: 8px
+      box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.8)
+      &:hover
+        box-shadow: 0 0 35px 0px rgba(0,0,0,1.0)
+        transform: scale(1.01)
       iframe, object, embed
         position: absolute
         top: 0

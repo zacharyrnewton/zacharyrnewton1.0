@@ -3,6 +3,7 @@ $(window).scroll(function(){
   var wScroll = $(this).scrollTop();
 
 
+
 //Hero Parallax
   $('.home h1').css({
     'transform' : 'translate(0px, '+ wScroll /3 +'%)'

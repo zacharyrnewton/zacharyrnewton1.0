@@ -966,7 +966,7 @@ section.photography {
   position: relative;
   z-index: 1;
   background: #404040;
-  background-image: url(../assets/img/photography2.jpg);
+  background-image: url(../assets/img/photography.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1140,10 +1140,13 @@ section.cinematography p {
 section.cinematography .videos-cont {
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
   opacity: 0;
   padding-top: 50px;
   margin: auto;
   width: 70%;
+  border-radius: 8px;
 }
 section.cinematography .videos-cont.vid-slide {
   opacity: 1;
@@ -1164,6 +1167,15 @@ section.cinematography .videos-cont .embed-container {
   height: 0;
   overflow: hidden;
   max-width: 100%;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
+}
+section.cinematography .videos-cont .embed-container:hover {
+  box-shadow: 0 0 35px 0px black;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 section.cinematography .videos-cont .embed-container iframe, section.cinematography .videos-cont .embed-container object, section.cinematography .videos-cont .embed-container embed {
   position: absolute;

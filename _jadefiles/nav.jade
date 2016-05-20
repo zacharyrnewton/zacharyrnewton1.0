@@ -1,0 +1,20 @@
+mixin nav-content()
+  ul.navigation
+    li: a(href="#home") Home
+    li: a(href="#about") About Me
+    li: a(href="#cinematography") Cinematography
+    li: a(href="#photography") Photography
+    li: a(href="#sound") Sound
+    li: a(href="#graphic-design") Graphic
+    li: a(href="#web-design") Web
+    li: a(href="#contact") Contact
+.mobile-nav
+  +nav-content()
+header
+  .header-position
+      a(href="")
+        h1.logo Zachary Newton
+      nav.site-nav
+        +nav-content()
+      a(href="mailto:zacharyrnewton@gmail.com").email-link +email me
+      .mobile-nav-toggle: span
