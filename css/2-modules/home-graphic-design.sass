@@ -35,18 +35,21 @@ section.graphic-design
       display: block
       margin: auto
       height: 100px
-      width: 327px
-      background:
-        image: url(../assets/img/ncc-logo.png)
-        size: cover
+      max-width: 350px
+
     .advance
       display: block
       margin: auto
       height: 100px
-      width: 391px
-      background:
-        image: url(../assets/img/advance-logo.png)
-        size: cover
+      max-width: 350px
+    .zn
+      display: block
+      margin: auto
+      max-width: 350px
+      filter: invert(100%)
+    .zn, .advance, .ncc
+      padding: 10px
+
 
   h2
     margin-top: 100px
@@ -80,7 +83,8 @@ section.graphic-design
       attachment: scroll
     @media (max-width: 775px)
       .logo-container
+        margin: auto
+        margin-top: 50px
         display: block
         margin-bottom: 0px
-        .advance
-          margin-top: 50px
+        max-width: 70%

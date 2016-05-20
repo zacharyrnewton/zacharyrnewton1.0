@@ -75,9 +75,13 @@ section.cinematography
     color: #476071
 
   .videos-cont
+    transition: 0.3s all ease-in-out
+    opacity: 0
     padding-top: 50px
     margin: auto
     width: 70%
+    &.vid-slide
+      opacity: 1
     @media (max-width: 750px)
       width: 80%
     @media (max-width: 640px)

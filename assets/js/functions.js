@@ -2,6 +2,7 @@
 $(window).scroll(function(){
   var wScroll = $(this).scrollTop();
 
+
 //Hero Parallax
   $('.home h1').css({
     'transform' : 'translate(0px, '+ wScroll /3 +'%)'
@@ -36,6 +37,20 @@ $(window).bind('scroll', function(){
 
   }
 
+
+
+  if(wScroll > $('.videos-cont').offset().top - ($(window).height() / 1.1)) {
+
+    $('.videos-cont').each(function(i){
+
+      setTimeout(function(){
+        $('.videos-cont').eq(i).addClass('vid-slide');
+      }, 200 * (i+1));
+    });
+
+  }
+
+//photography
   if(wScroll > $('.ig-button').offset().top - ($(window).height() / 1.1)) {
 
     $('.ig-button').each(function(i){

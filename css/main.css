@@ -889,7 +889,6 @@ section.home h1 {
 section.home h1 span {
   font-weight: 100;
   font-size: 0.4em;
-  line-height: 0.5em;
 }
 
 @media (max-width: 500px) {
@@ -1139,9 +1138,15 @@ section.cinematography p {
   color: #476071;
 }
 section.cinematography .videos-cont {
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  opacity: 0;
   padding-top: 50px;
   margin: auto;
   width: 70%;
+}
+section.cinematography .videos-cont.vid-slide {
+  opacity: 1;
 }
 @media (max-width: 750px) {
   section.cinematography .videos-cont {
@@ -1208,6 +1213,11 @@ section.sound .body-wrapper:after {
   background-repeat: repeat;
   z-index: -1;
   opacity: 0.3;
+}
+section.sound .body-wrapper .audio-container iframe {
+  display: block;
+  margin: auto;
+  padding: 5% 0;
 }
 section.sound .body-wrapper p {
   text-indent: 1em;
@@ -1300,17 +1310,23 @@ section.graphic-design .logo-container .ncc {
   display: block;
   margin: auto;
   height: 100px;
-  width: 327px;
-  background-image: url(../assets/img/ncc-logo.png);
-  background-size: cover;
+  max-width: 350px;
 }
 section.graphic-design .logo-container .advance {
   display: block;
   margin: auto;
   height: 100px;
-  width: 391px;
-  background-image: url(../assets/img/advance-logo.png);
-  background-size: cover;
+  max-width: 350px;
+}
+section.graphic-design .logo-container .zn {
+  display: block;
+  margin: auto;
+  max-width: 350px;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+section.graphic-design .logo-container .zn, section.graphic-design .logo-container .advance, section.graphic-design .logo-container .ncc {
+  padding: 10px;
 }
 section.graphic-design h2 {
   margin-top: 100px;
@@ -1346,11 +1362,11 @@ section.graphic-design p {
 }
 @media (max-width: 1075px) and (max-width: 775px) {
   section.graphic-design .logo-container {
+    margin: auto;
+    margin-top: 50px;
     display: block;
     margin-bottom: 0px;
-  }
-  section.graphic-design .logo-container .advance {
-    margin-top: 50px;
+    max-width: 70%;
   }
 }
 
