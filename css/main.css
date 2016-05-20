@@ -875,7 +875,7 @@ section.home:after {
 }
 section.home h1 {
   margin: auto;
-  margin-top: 28vh;
+  margin-top: 24vh;
   font-size: 5em;
   max-width: 800px;
   text-align: center;
@@ -932,7 +932,7 @@ section.about h4 {
   text-indent: 1em;
   padding: 10px;
   color: #476071;
-  font-weight: 100;
+  font-weight: 300;
 }
 section.about .col-1.about-me-text {
   max-width: 320px;
@@ -1011,6 +1011,9 @@ section.photography .instagram-badge {
   max-width: 500px;
   margin: auto 15px;
 }
+section.photography .instagram-badge .instagram-media {
+  max-width: 100px;
+}
 section.photography .instagram-badge a.ig-button {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -1035,11 +1038,6 @@ section.photography .instagram-badge a.ig-button:hover {
   background: #66BD2B;
   color: white;
   box-shadow: 0px 0px 0px 1px #66BD2B;
-}
-section.photography .instagram-badge.photography-is-visable {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  opacity: 1;
 }
 @media (max-width: 640px) {
   section.photography .instagram-badge {
@@ -1139,29 +1137,34 @@ section.cinematography p {
   padding: 10px;
   color: #476071;
 }
-section.cinematography .pre-pro {
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  -webkit-transform: translateX(-100px);
-          transform: translateX(-100px);
-  opacity: 0;
+section.cinematography .videos-cont {
+  padding-top: 50px;
+  margin: auto;
+  width: 70%;
 }
-section.cinematography .pre-pro.pro-body-is-visable {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  opacity: 1;
+@media (max-width: 750px) {
+  section.cinematography .videos-cont {
+    width: 80%;
+  }
 }
-section.cinematography .post-pro {
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  -webkit-transform: translateX(100px);
-          transform: translateX(100px);
-  opacity: 0;
+@media (max-width: 640px) {
+  section.cinematography .videos-cont {
+    width: 90%;
+  }
 }
-section.cinematography .post-pro.pro-body-is-visable {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  opacity: 1;
+section.cinematography .videos-cont .embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+section.cinematography .videos-cont .embed-container iframe, section.cinematography .videos-cont .embed-container object, section.cinematography .videos-cont .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 section.sound {
@@ -1580,6 +1583,7 @@ section.footer .wrapper .googleplus {
 }
 
 .home-sections {
+  margin-top: 90px;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
@@ -1702,285 +1706,4 @@ body {
 body.is-open {
   overflow-x: hidden;
   overflow-y: hidden;
-}
-
-section.cinematography-page {
-  position: fixed;
-  -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  background: #a8a8a6;
-  background-image: url(../assets/img/img-overlay-dia-opac.png);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 135px;
-  z-index: 50;
-  overflow: scroll;
-  display: block;
-  -webkit-overflow-scrolling: touch;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  opacity: 0;
-}
-section.cinematography-page.is-open {
-  -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  opacity: 1;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-section.cinematography-page .page-content-wrapper {
-  padding: 50px 0;
-}
-section.cinematography-page .page-content-wrapper h3.main-header {
-  text-align: center;
-  color: white;
-}
-section.cinematography-page .page-content-wrapper p {
-  color: white;
-  text-indent: 1em;
-  padding: 10px;
-}
-@media (max-width: 775px) {
-  section.cinematography-page {
-    top: 90px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-    opacity: 0;
-  }
-}
-
-section.photography-page {
-  position: fixed;
-  -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  background: #22445f;
-  background-image: url(../assets/img/img-overlay-dia-opac.png);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 135px;
-  z-index: 50;
-  overflow: scroll;
-  display: block;
-  -webkit-overflow-scrolling: touch;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  opacity: 0;
-}
-section.photography-page.is-open {
-  opacity: 1;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-section.photography-page .page-content-wrapper {
-  padding: 50px 0;
-}
-section.photography-page .page-content-wrapper h3.main-header {
-  text-align: center;
-  color: white;
-}
-section.photography-page .page-content-wrapper p {
-  color: white;
-  text-indent: 1em;
-  padding: 10px;
-}
-section.photography-page .page-content-wrapper h6 {
-  color: white;
-}
-section.photography-page .page-content-wrapper p.c {
-  text-indent: 0;
-}
-@media (max-width: 775px) {
-  section.photography-page {
-    top: 90px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-    opacity: 0;
-  }
-}
-
-section.sound-page {
-  position: fixed;
-  -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  background: #474749;
-  background-image: url(../assets/img/img-overlay-dia-opac.png);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 135px;
-  z-index: 50;
-  overflow: scroll;
-  display: block;
-  -webkit-overflow-scrolling: touch;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  opacity: 0;
-}
-section.sound-page.is-open {
-  opacity: 1;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-section.sound-page .page-content-wrapper {
-  padding: 50px 0;
-}
-section.sound-page .page-content-wrapper h3.main-header {
-  text-align: center;
-  color: white;
-}
-section.sound-page .page-content-wrapper p {
-  color: white;
-  text-indent: 1em;
-  padding: 10px;
-}
-section.sound-page .page-content-wrapper h6 {
-  color: white;
-}
-section.sound-page .page-content-wrapper p.c {
-  text-indent: 0;
-}
-@media (max-width: 775px) {
-  section.sound-page {
-    top: 90px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-    opacity: 0;
-  }
-}
-
-section.graphic-design-page {
-  position: fixed;
-  -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  background: #31525b;
-  background-image: url(../assets/img/img-overlay-dia-opac.png);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 135px;
-  z-index: 50;
-  overflow: scroll;
-  display: block;
-  -webkit-overflow-scrolling: touch;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  opacity: 0;
-}
-section.graphic-design-page.is-open {
-  opacity: 1;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-section.graphic-design-page .page-content-wrapper {
-  padding: 50px 0;
-}
-section.graphic-design-page .page-content-wrapper h3.main-header {
-  text-align: center;
-  color: white;
-}
-section.graphic-design-page .page-content-wrapper p {
-  color: white;
-  text-indent: 1em;
-  padding: 10px;
-}
-section.graphic-design-page .page-content-wrapper h6 {
-  color: white;
-}
-section.graphic-design-page .page-content-wrapper p.c {
-  text-indent: 0;
-}
-@media (max-width: 775px) {
-  section.graphic-design-page {
-    top: 90px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-    opacity: 0;
-  }
-}
-
-section.web-design-page {
-  position: fixed;
-  -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  background: #7F7F7F;
-  background-image: url(../assets/img/img-overlay-dia-opac.png);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 135px;
-  z-index: 50;
-  overflow: scroll;
-  display: block;
-  -webkit-overflow-scrolling: touch;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  opacity: 0;
-}
-section.web-design-page.is-open {
-  opacity: 1;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-section.web-design-page .page-content-wrapper {
-  padding: 50px 0;
-}
-section.web-design-page .page-content-wrapper h3.main-header {
-  text-align: center;
-  color: white;
-}
-section.web-design-page .page-content-wrapper p {
-  color: white;
-  text-indent: 1em;
-  padding: 10px;
-}
-section.web-design-page .page-content-wrapper h6 {
-  color: white;
-}
-section.web-design-page .page-content-wrapper p.c {
-  text-indent: 0;
-}
-@media (max-width: 775px) {
-  section.web-design-page {
-    top: 90px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-    opacity: 0;
-  }
 }
