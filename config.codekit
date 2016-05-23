@@ -176,6 +176,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/hero2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 360796,
+		"inputAbbreviatedPath": "\/assets\/img\/hero2.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/hero2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/img-overlay-col.png": {
 		"fileType": 32768,
 		"ignore": 0,
