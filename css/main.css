@@ -1161,7 +1161,6 @@ section.cinematography .videos-cont .embed-container {
   max-width: 100%;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
-  box-shadow: 0 0 35px 0px rgba(0, 0, 0, 0.8);
 }
 section.cinematography .videos-cont .embed-container iframe, section.cinematography .videos-cont .embed-container object, section.cinematography .videos-cont .embed-container embed {
   position: absolute;
@@ -1265,12 +1264,7 @@ section.sound .body-wrapper p.no-indent {
 section.graphic-design {
   position: relative;
   z-index: 1;
-  background: #3e606f;
-  background-image: url(../assets/img/graphic-design.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background: #5b839c;
 }
 
 section.graphic-design:after {
@@ -1335,15 +1329,7 @@ section.graphic-design p {
   opacity: 0;
 }
 
-@media (max-width: 1075px) {
-  section.graphic-design {
-    background-image: url(../assets/img/graphic-design.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-attachment: scroll;
-  }
-}
-@media (max-width: 1075px) and (max-width: 775px) {
+@media (max-width: 750px) {
   section.graphic-design .logo-container {
     margin: auto;
     margin-top: 50px;
@@ -1352,7 +1338,6 @@ section.graphic-design p {
     max-width: 70%;
   }
 }
-
 .home-sections section.web-design {
   padding: 50px 0 0 0;
 }

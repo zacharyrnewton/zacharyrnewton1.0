@@ -7,4 +7,6 @@ section.cinematography#cinematography
 
   .videos-cont
     .embed-container
-      iframe(src="https://www.youtube-nocookie.com/embed/U9ksxuytw-w?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen)
+      youtube_thumb(onclick="this.nextElementSibling.style.display='block'; this.style.display='none'")
+        img.star_wars_thumb(src="../assets/img/youtube-thumb.png" style="cursor:pointer" width="100%")
+      iframe#youtube(style="display:none;" src="https://www.youtube-nocookie.com/embed/U9ksxuytw-w?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen)

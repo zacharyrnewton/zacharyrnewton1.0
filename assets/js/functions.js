@@ -51,6 +51,16 @@ $(window).bind('scroll', function(){
 
   }
 
+
+  $(document).ready(function() {
+  $('.star_wars_thumb').on('click', function(ev) {
+
+    $("#youtube")[0].src += "&autoplay=1";
+    ev.preventDefault();
+
+  });
+});
+
 //photography
   if(wScroll > $('.ig-button').offset().top - ($(window).height() / 1.1)) {
 

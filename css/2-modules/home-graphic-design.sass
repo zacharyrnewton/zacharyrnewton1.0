@@ -1,12 +1,7 @@
 section.graphic-design
   position: relative
   z-index: 1
-  background: #3e606f
-    image: url(../assets/img/graphic-design.jpg)
-    attachment: fixed
-    repeat: no-repeat
-    size: cover
-    position: center center
+  background: #5b839c
 
 section.graphic-design:after
   content: ""
@@ -62,17 +57,11 @@ section.graphic-design
     opacity: 0
 
 
-@media (max-width: 1075px)
+@media (max-width: 750px)
   section.graphic-design
-    background:
-      image: url(../assets/img/graphic-design.jpg)
-      position: center center
-      size: cover
-      attachment: scroll
-    @media (max-width: 775px)
-      .logo-container
-        margin: auto
-        margin-top: 50px
-        display: block
-        margin-bottom: 0px
-        max-width: 70%
+    .logo-container
+      margin: auto
+      margin-top: 50px
+      display: block
+      margin-bottom: 0px
+      max-width: 70%

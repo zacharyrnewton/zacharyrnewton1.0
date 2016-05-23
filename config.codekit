@@ -330,6 +330,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/youtube-thumb.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.79775e+06,
+		"inputAbbreviatedPath": "\/assets\/img\/youtube-thumb.png",
+		"outputAbbreviatedPath": "\/assets\/img\/youtube-thumb.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/zaina-ss.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
