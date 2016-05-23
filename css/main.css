@@ -1265,6 +1265,10 @@ section.graphic-design {
   position: relative;
   z-index: 1;
   background: #5b839c;
+  background-image: url(../assets/img/graphic-design.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 section.graphic-design:after {
