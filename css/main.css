@@ -874,20 +874,27 @@ section.home:after {
 }
 section.home h1 {
   margin: auto;
-  margin-top: 20vh;
+  margin-top: 22vh;
   font-size: 5em;
   max-width: 800px;
   text-align: center;
   color: white;
   font-weight: 200;
+}
+@media (max-width: 500px) {
+  section.home h1 {
+    margin-top: 12vh;
+  }
+}
+section.home h6 {
+  margin-top: -20px;
+  text-align: center;
+  color: white;
+  font-weight: 100;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-}
-section.home h1 span {
-  font-weight: 100;
-  font-size: 0.4em;
 }
 
 @media (max-width: 500px) {
@@ -1139,26 +1146,12 @@ section.cinematography p {
 section.cinematography .videos-cont {
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-  opacity: 0;
-  padding-top: 50px;
+  padding-top: 10%;
+  padding-bottom: 10%;
   margin: auto;
-  width: 70%;
-  border-radius: 8px;
-}
-section.cinematography .videos-cont.vid-slide {
-  opacity: 1;
-}
-@media (max-width: 750px) {
-  section.cinematography .videos-cont {
-    width: 80%;
-  }
-}
-@media (max-width: 640px) {
-  section.cinematography .videos-cont {
-    width: 90%;
-  }
+  margin-top: 25px;
+  margin-bottom: -25px;
+  width: calc(70% - 1px);
 }
 section.cinematography .videos-cont .embed-container {
   position: relative;
@@ -1168,13 +1161,7 @@ section.cinematography .videos-cont .embed-container {
   max-width: 100%;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
-  border-radius: 8px;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
-}
-section.cinematography .videos-cont .embed-container:hover {
-  box-shadow: 0 0 35px 0px black;
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
+  box-shadow: 0 0 35px 0px rgba(0, 0, 0, 0.8);
 }
 section.cinematography .videos-cont .embed-container iframe, section.cinematography .videos-cont .embed-container object, section.cinematography .videos-cont .embed-container embed {
   position: absolute;
@@ -1182,7 +1169,6 @@ section.cinematography .videos-cont .embed-container iframe, section.cinematogra
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 8px;
 }
 
 section.sound {
@@ -1313,31 +1299,17 @@ section.graphic-design .logo-container {
     display: block;
     margin-bottom: 0px;
   }
-  section.graphic-design .logo-container .advance {
-    margin-top: 50px;
-  }
-}
-section.graphic-design .logo-container .ncc {
-  display: block;
-  margin: auto;
-  height: 100px;
-  max-width: 350px;
-}
-section.graphic-design .logo-container .advance {
-  display: block;
-  margin: auto;
-  height: 100px;
-  max-width: 350px;
-}
-section.graphic-design .logo-container .zn {
-  display: block;
-  margin: auto;
-  max-width: 350px;
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
 }
 section.graphic-design .logo-container .zn, section.graphic-design .logo-container .advance, section.graphic-design .logo-container .ncc {
   padding: 10px;
+  display: block;
+  margin: auto;
+  max-width: 350px;
+}
+section.graphic-design .logo-container .zn {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  max-width: 225px;
 }
 section.graphic-design h2 {
   margin-top: 100px;

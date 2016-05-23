@@ -5,7 +5,7 @@ $(window).scroll(function(){
 
 
 //Hero Parallax
-  $('.home h1').css({
+  $('#tagline').css({
     'transform' : 'translate(0px, '+ wScroll /3 +'%)'
   });
 
