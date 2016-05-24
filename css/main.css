@@ -759,17 +759,21 @@ ul.j li span a:hover {
 .home-wrap .mobile-nav-toggle.is-open span {
   background: transparent;
 }
-.home-wrap .mobile-nav-toggle.is-open span:before, .home-wrap .mobile-nav-toggle.is-open span:after {
+.home-wrap .mobile-nav-toggle.is-open span:before {
   -webkit-transform-origin: center;
           transform-origin: center;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  top: 0;
+  top: 0px;
   background: red;
 }
 .home-wrap .mobile-nav-toggle.is-open span:after {
+  -webkit-transform-origin: center;
+          transform-origin: center;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+  top: -2px;
+  background: red;
 }
 
 .mobile-nav {
@@ -1213,7 +1217,7 @@ section.sound .body-wrapper:after {
 section.sound .body-wrapper .audio-container iframe {
   display: block;
   margin: auto;
-  padding: 5% 0;
+  padding: 15% 0;
 }
 section.sound .body-wrapper p {
   text-indent: 1em;
@@ -1338,18 +1342,21 @@ section.graphic-design p {
   opacity: 0;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1024px) {
   section.graphic-design {
     background-attachment: scroll;
   }
+}
+@media (max-width: 1024px) and (max-width: 775px) {
   section.graphic-design .logo-container {
     margin: auto;
-    margin-top: 50px;
+    margin-top: 100px;
     display: block;
     margin-bottom: 0px;
     max-width: 70%;
   }
 }
+
 .home-sections section.web-design {
   padding: 50px 0 0 0;
 }

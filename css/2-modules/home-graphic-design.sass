@@ -62,13 +62,14 @@ section.graphic-design
     opacity: 0
 
 
-@media (max-width: 750px)
+@media (max-width: 1024px)
   section.graphic-design
     background:
       attachment: scroll
-    .logo-container
-      margin: auto
-      margin-top: 50px
-      display: block
-      margin-bottom: 0px
-      max-width: 70%
+    @media (max-width: 775px)
+      .logo-container
+        margin: auto
+        margin-top: 100px
+        display: block
+        margin-bottom: 0px
+        max-width: 70%

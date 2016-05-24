@@ -73,15 +73,17 @@
     &.is-open span
       background: transparent
 
-    &.is-open span:before,
-    &.is-open span:after
+    &.is-open span:before
       transform-origin: center
       transform: rotate(45deg)
-      top: 0
+      top: 0px
       background: red
 
     &.is-open span:after
+      transform-origin: center
       transform: rotate(-45deg)
+      top: -2px
+      background: red
 
 //Mobile Nav
 .mobile-nav
