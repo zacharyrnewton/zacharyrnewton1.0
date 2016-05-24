@@ -1217,7 +1217,14 @@ section.sound .body-wrapper:after {
 section.sound .body-wrapper .audio-container iframe {
   display: block;
   margin: auto;
-  padding: 15% 0;
+  padding: 8% 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 1000px) {
+  section.sound .body-wrapper .audio-container iframe {
+    padding: 20% 0;
+  }
 }
 section.sound .body-wrapper p {
   text-indent: 1em;
