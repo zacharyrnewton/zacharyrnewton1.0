@@ -847,10 +847,10 @@ section.home {
   position: relative;
   z-index: 1;
   height: calc(90vh - 90px);
-  background-image: url(../assets/img/hero2.jpg);
+  background-image: url(../assets/img/hero.jpg);
   background-attachment: fixed;
   background-size: cover;
-  background-position: top center;
+  background-position: bottom center;
   background-repeat: no-repeat;
   overflow: hidden;
 }
@@ -1339,6 +1339,9 @@ section.graphic-design p {
 }
 
 @media (max-width: 750px) {
+  section.graphic-design {
+    background-attachment: scroll;
+  }
   section.graphic-design .logo-container {
     margin: auto;
     margin-top: 50px;
