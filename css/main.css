@@ -1173,6 +1173,9 @@ section.cinematography .videos-cont .embed-container iframe, section.cinematogra
   width: 100%;
   height: 100%;
 }
+section.cinematography .videos-cont .embed-container #youtube {
+  display: none;
+}
 
 section.sound {
   padding-bottom: 0;

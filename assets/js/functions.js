@@ -53,9 +53,10 @@ $(window).bind('scroll', function(){
 
 
   $(document).ready(function() {
-  $('.star_wars_thumb').on('click', function(ev) {
-
-    $("#youtube")[0].src += "&autoplay=1";
+  $('.youtube_thumb').on('click', function(ev) {
+    $('.youtube_thumb').css({'display' : 'none'});
+    $('#youtube').css({'display' : 'block'});
+    $('#youtube')[0].src += "&autoplay=1";
     ev.preventDefault();
 
   });
