@@ -1166,6 +1166,11 @@ section.cinematography .videos-cont .embed-container {
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
+@media (max-width: 900px) {
+  section.cinematography .videos-cont .embed-container .youtube_thumb {
+    display: none;
+  }
+}
 section.cinematography .videos-cont .embed-container iframe, section.cinematography .videos-cont .embed-container object, section.cinematography .videos-cont .embed-container embed {
   position: absolute;
   top: 0;
@@ -1175,6 +1180,11 @@ section.cinematography .videos-cont .embed-container iframe, section.cinematogra
 }
 section.cinematography .videos-cont .embed-container #youtube {
   display: none;
+}
+@media (max-width: 900px) {
+  section.cinematography .videos-cont .embed-container #youtube {
+    display: block;
+  }
 }
 
 section.sound {

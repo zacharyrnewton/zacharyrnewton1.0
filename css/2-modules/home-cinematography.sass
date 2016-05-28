@@ -90,6 +90,9 @@ section.cinematography
       overflow: hidden
       max-width: 100%
       transition: 0.3s all ease-in-out
+      @media (max-width: 900px)
+        .youtube_thumb
+          display: none
       iframe, object, embed
         position: absolute
         top: 0
@@ -98,3 +101,5 @@ section.cinematography
         height: 100%
       #youtube
         display: none
+        @media (max-width: 900px)
+          display: block
