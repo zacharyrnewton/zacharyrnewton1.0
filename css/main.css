@@ -854,7 +854,7 @@ section.home {
   background-image: url(../assets/img/hero.jpg);
   background-attachment: fixed;
   background-size: cover;
-  background-position: bottom center;
+  background-position: center center;
   background-repeat: no-repeat;
   overflow: hidden;
 }

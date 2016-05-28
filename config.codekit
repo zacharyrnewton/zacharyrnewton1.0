@@ -165,13 +165,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/hero.jpg": {
+	"\/assets\/img\/hero.JPG": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 48195,
-		"inputAbbreviatedPath": "\/assets\/img\/hero.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/hero.jpg",
+		"initialSize": 9.72867e+06,
+		"inputAbbreviatedPath": "\/assets\/img\/hero.JPG",
+		"outputAbbreviatedPath": "\/assets\/img\/hero.JPG",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
