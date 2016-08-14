@@ -275,13 +275,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/ruby-blog-ss.jpg": {
+	"\/assets\/img\/sl2visuals-ss.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 69414,
-		"inputAbbreviatedPath": "\/assets\/img\/ruby-blog-ss.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/ruby-blog-ss.jpg",
+		"initialSize": 100348,
+		"inputAbbreviatedPath": "\/assets\/img\/sl2visuals-ss.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/sl2visuals-ss.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -702,6 +702,15 @@
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"useLibsass": false
+		},
+	"\/index.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [
