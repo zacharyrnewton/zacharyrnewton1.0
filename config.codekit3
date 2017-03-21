@@ -7,8 +7,14 @@
 		"uuidString": "973AC369-3A19-42F9-B05E-B2293313B5B0"
 		}
 	],
-"creatorBuild": "25504",
+"creatorBuild": "25568",
 "files": {
+	"\/_config.yml": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/_config.yml",
+		"oF": 0
+		},
 	"\/_jadefiles\/_notes\/dwsync.xml": {
 		"ft": 8192,
 		"oA": 2,
@@ -2313,12 +2319,6 @@
 		"oA": 0,
 		"oAP": "\/index.html",
 		"oF": 0
-		},
-	"\/Untitled-1.ico": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/Untitled-1.ico",
-		"oF": 0
 		}
 	},
 "hooks": [
@@ -3201,6 +3201,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-multi-assign": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-multi-spaces": {
 			"active": 0,
 			"optionString": "{'exceptions': {'Property': true, 'BinaryExpression': false, 'VariableDeclarator': false, 'ImportDeclaration': false}}"
@@ -3529,6 +3533,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"prefer-promise-reject-errors": {
+			"active": 0,
+			"optionString": "{'allowEmptyReject': false}"
+			},
 		"prefer-rest-params": {
 			"active": 0,
 			"optionString": ""
@@ -3622,6 +3630,10 @@
 			"optionString": ""
 			},
 		"template-curly-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"template-tag-spacing": {
 			"active": 0,
 			"optionString": "'never'"
 			},
